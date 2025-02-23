@@ -1,0 +1,256 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+/* if语句 */
+//int main() {
+//	int input = 0;
+//	printf("欢迎加入比特！\n");
+//	printf("要好好学习吗？(1/0)\n");
+//	scanf("%d",&input);
+//	if (input == 1) {
+//		printf("一路飙升，迎娶白富美，走上人生巅峰！\n");
+//	}
+//	else {
+//		printf("村口烤地瓜");
+//	}
+//	return 0;
+//}
+
+
+/* for循环 */
+//int main() {
+//	printf("欢迎加入比特！\n");
+//	printf("买彩票的结果(1/0)\n");
+//	int intput = 0;
+//	for (int i = 0; i < 100;i++) {
+//		scanf("%d",&intput);
+//		if (intput == 1) {
+//			printf("中了五百万，直接跑路，迎娶白富美\n");
+//			break;
+//		}
+//		else {
+//			printf("今日之事，皆在天命也，今天接着学，明天继续！\n");
+//		}
+//	}
+//	return 0;
+//}
+
+
+
+/* while循环 */
+//int main() {
+//	printf("欢迎加入比特！\n");
+//	printf("购买彩票的成果(1/0)\n");
+//	int intput = 0;
+//	int line = 0;
+//	while (line <= 2000) {
+//		scanf("%d",&intput);
+//		if (intput == 1) {
+//			printf("直接跑路，迎娶白富美\n");
+//			break;
+//		}
+//		else {
+//			printf("继续学习，来日方长\n");
+//		}
+//	}
+//	return 0;
+//}
+
+
+/* while循环 */
+//int main() {
+//	printf("加入比特");
+//	int line = 0;
+//	while (line < 20000) {
+//		printf("写代码：%d\n", line);
+//		line++;
+//	}
+//	if (line >= 20000) {
+//		printf("代码大牛，好工作");
+//	}
+//	else {
+//		printf("来日方长，再接再厉！");
+//	}
+//	return 0;
+//}
+
+
+
+/*函数*/
+//int ADD(int x,int y) {
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+//int main() {
+//	int num1 = 0;
+//	int num2 = 0;
+//
+//	printf("请输入两个数字：\n");
+//	scanf("%d %d", &num1, &num2); 
+//
+//	int sum = ADD(num1,num2);
+//	printf("两数之和为：%d",sum);
+//	return 0;
+//}
+
+
+
+//int main() {
+//	int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+//	for (int i = 0; i < 10; i++) {
+//		printf("%d\n",arr[i]);
+//	}
+//	while(j < 10){
+//		printf("%d\n",arr[j]);
+//		j++;
+//}
+//	return 0;
+//}
+
+
+
+//int main() {
+//	printf("Name    Age    Gender\n");
+//	printf("--------------------\n");
+//	printf("Jack    18     man\n");
+//	return 0;
+//}
+
+
+//Math(int x,int y) {
+//	return (-8 + 22) * x - 10 + y / 2;
+//}
+//int main() {
+//	int a = 10;
+//	int c = 212;
+//
+//	int sum = Math(a,c);
+//	printf("%d\n",sum);
+//	return 0;
+//}
+
+//int Compare(int x,int y) {
+//	if (x > y) {
+//		return x;
+//	}
+//	else {
+//		return y;
+//	}
+//}
+//int main() {
+//	int a = 0;
+//	int b = 0;
+//
+//	printf("请输入两个要比较的值：\n");
+//	scanf("%d %d",&a,&b);
+//	int max = Compare(a,b);
+//	printf("较大值为：%d\n",max);
+//	return 0;
+//}
+
+
+//Compare(int x) {
+//	int y = 0;
+//	if (x < 0) {
+//		y = 1;
+//		return y;
+//	}
+//	if (x == 0) {
+//		return y;
+//	}
+//	else {
+//		y = -1;
+//		return y;
+//	}
+//}
+//int main() {
+//	int a = 0;
+//	printf("请输入一个整数：\n");
+//	scanf("%d",&a);
+//	if (a < 10000 && a > -10000) {
+//		int result = Compare(a);
+//		printf("y的结果是：%d\n",result);
+//	}
+//	else {
+//		printf("输入的整数不在范围内,请重新输入!\n");
+//	}
+//	return 0;
+//}
+
+
+
+/* static关键字 */
+//void test()
+//{
+//	int a = 1;     //a是局部变量，生命周期只在test函数作用域内，所以结果只会输出10个2；但是把a定义为全局变量，就可以输出2-11了
+//	a++;
+//	printf("%d ",a);
+//}
+//int main() {
+//	int i = 0;
+//	while (i < 10)
+//	{
+//		test();
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+
+//void test()
+//{
+//	static int a = 1;     //static修饰的局部变量，就算是出了自己的作用域，也不会销毁。static修饰局部变量的时候，是改变了变量的存储位置
+//	a++;
+//	printf("%d ",a);
+//}
+//int main() {
+//	int i = 0;
+//	while (i < 10)
+//	{
+//		test();
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+
+/* #define定义标识符常量 */
+//#define NUM 100
+//int main()
+//{
+//	printf("%d\n",NUM);
+//	int n = NUM;
+//	printf("%d",n);
+//	int arr[NUM] = {0};
+//	return 0;
+//}
+
+
+/* #define定义宏 */
+//#define ADD(x,y) ((x)+(y))         /*其中，ADD是宏名，ADD(x,y)中的x和y是宏的参数（参数无类型），((x)+(y)) 是宏体*/
+////和下方定义函数一样功能
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int c = ADD(a,b);
+//	printf("%d\n",c);
+//	return 0;
+//}
+
+
+
+int main()
+{
+
+	return 0;
+}
