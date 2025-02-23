@@ -1,3 +1,4 @@
+//数据类型，常量，变量，字符串，注释，函数，数组，define定义常量 和宏
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
